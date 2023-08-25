@@ -1,7 +1,9 @@
+import Sidebar from "../components/Sidebar";
+
 const Main = () => {
   return (
     <div>
-      <h1>Main</h1>
+      <Sidebar />
     </div>
   );
 };
