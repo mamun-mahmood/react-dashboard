@@ -1,40 +1,42 @@
+import { useState } from "react";
 import { svg } from "../../assets/svg";
 import "./Sidebar.css";
 const Sidebar = () => {
+  const [active, setActive] = useState("/dashboard");
   const sidebarMenus = [
     {
       name: "Dashboard",
-      icon: "fa fa-dashboard",
+      icon: svg.dashboard,
       link: "/dashboard",
     },
     {
       name: "Market",
-      icon: "fa fa-shopping-cart",
+      icon: svg.market,
       link: "/market",
     },
     {
       name: "Transactions",
-      icon: "fa fa-exchange",
+      icon: svg.transaction,
       link: "/transactions",
     },
     {
       name: "Profile",
-      icon: "fa fa-user",
+      icon: svg.porfile,
       link: "/profile",
     },
     {
       name: "Setting",
-      icon: "fa fa-cog",
+      icon: svg.setting,
       link: "/setting",
     },
     {
       name: "Help",
-      icon: "fa fa-question-circle",
+      icon: svg.help,
       link: "/help",
     },
     {
       name: "Logout",
-      icon: "fa fa-sign-out",
+      icon: svg.logout,
       link: "/logout",
     },
   ];
@@ -51,7 +53,13 @@ const Sidebar = () => {
         </div>
         {sidebarMenus.map((menu, index) => (
           <div key={index}>
-            <button className="menu-sidebar-option">{menu.name}</button>
+            <button
+              className="menu-sidebar-option"
+              onClick={() => setActive(menu.link)}
+            >
+              <span className="sidebar-option-icon">{menu.icon}</span>
+              {menu.name}
+            </button>
           </div>
         ))}
       </div>

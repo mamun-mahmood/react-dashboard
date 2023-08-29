@@ -21,7 +21,17 @@
   margin-top: 35px;
   cursor: pointer;
   font-size: 17.588px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-left: 29px;
 }
 .menu-sidebar-option:hover {
   background: #d5e6fb;
+}
+.menu-sidebar-option:focus {
+  background: #d5e6fb;
+}
+.sidebar-option-icon {
+  margin-right: 7px;
 }

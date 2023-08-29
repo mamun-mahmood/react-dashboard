@@ -1,11 +1,25 @@
 import "./App.css";
-import Main from "./pages/Main";
-
+import Navbar from "./components/navbar/Navbar";
+import Sidebar from "./components/sidebar/Sidebar";
 function App() {
   return (
-    <>
-      <Main />
-    </>
+    <div
+      style={{
+        display: "flex",
+      }}
+    >
+      {/* sidebar */}
+      <Sidebar />
+      <div
+        style={{
+          flex: 1,
+        }}
+      >
+        {/* navbar */}
+        <Navbar />
+        {/* screens */}
+      </div>
+    </div>
   );
 }
 
