@@ -1,9 +1,21 @@
-import Sidebar from "../components/Sidebar";
+import Navbar from "../components/navbar/Navbar";
+import Sidebar from "../components/sidebar/Sidebar";
 
 const Main = () => {
   return (
-    <div>
+    <div
+      style={{
+        display: "flex",
+      }}
+    >
       <Sidebar />
+      <div
+        style={{
+          flex: 1,
+        }}
+      >
+        <Navbar />
+      </div>
     </div>
   );
 };

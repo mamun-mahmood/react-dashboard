@@ -1,0 +1,27 @@
+.sidebar-container {
+  height: 100vh;
+  border-right: 1px solid rgba(192, 197, 203, 0.37);
+}
+.sidebar {
+  padding: 42px 49px;
+  width: 307px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Inter;
+  height: auto;
+}
+.menu-sidebar-option {
+  width: 208px;
+  border-radius: 8.834px;
+  flex-shrink: 0;
+  height: 49px;
+  border: 0px;
+  margin-top: 35px;
+  cursor: pointer;
+  font-size: 17.588px;
+}
+.menu-sidebar-option:hover {
+  background: #d5e6fb;
+}
