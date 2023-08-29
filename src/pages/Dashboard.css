@@ -1,63 +1,50 @@
-/* Reset default margin and padding */
-* {
-  margin: 0;
-  padding: 0;
-}
-
-/* Set a background color for the whole page */
-body {
-  background-color: #f0f0f0;
-  font-family: Arial, sans-serif;
-}
-
 /* Page container */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+.dashboard-container {
+  padding: 28px 33px;
+  background: #d5e6fb;
 }
 
 /* First row with four columns */
 .first-row {
+  background: transparent;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 27px;
 }
 
 .first-row .column {
   flex-basis: 23%;
-  background-color: #fff;
-  padding: 10px;
-  border: 1px solid #ccc;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 174px;
+  border-radius: 12px;
+  backdrop-filter: blur(20px);
 }
 
 /* Second row with two columns */
 .second-row {
+  background: transparent;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .second-row .column {
   flex-basis: 48%;
-  background-color: #fff;
   padding: 10px;
-  border: 1px solid #ccc;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  backdrop-filter: blur(20px);
+  height: 428px;
 }
 
 /* Third row with three columns */
 .third-row {
+  background: transparent;
   display: flex;
   justify-content: space-between;
 }
 
 .third-row .column {
   flex-basis: 31%;
-  background-color: #fff;
-  padding: 10px;
-  border: 1px solid #ccc;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
+  border-radius: 15px;
+  backdrop-filter: blur(20px);
+  height: 301px;
 }
