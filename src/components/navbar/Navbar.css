@@ -15,7 +15,6 @@
   height: 50px;
   border-radius: 57px;
   border: 1.3px solid rgba(196, 202, 205, 0.4);
-  background: #fff;
   padding: 0px 20px;
 }
 .search-icon {
@@ -39,30 +38,31 @@
 }
 .avatar-name-conatainer {
   display: flex;
+  align-items: center;
+  background: transparent;
 }
 .name-email-container {
   margin-left: 9px;
+  background: transparent;
 }
 .avatar {
-  width: 45.455px;
-  height: 45.455px;
-  flex-shrink: 0;
+  width: 45px;
+  height: 45px;
+  background: transparent;
 }
 .navbar-profile-button {
   color: #5e6e78;
-  font-family: Inter;
-  font-size: 11px;
   font-style: normal;
   font-weight: 500;
-  line-height: 28.458px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #f2f8ff;
+  background: #f2f8ff;
   border-radius: 12.6px;
   padding: 7px 16px;
 }
 .navbar-profile-button-name {
+  background: transparent;
   color: #1f1f1f;
   font-family: Inter;
   font-size: 13.468px;
@@ -71,6 +71,7 @@
   line-height: 28.458px; /* 211.298% */
 }
 .navbar-profile-button-email {
+  background: transparent;
   color: #5e6e78;
   font-family: Inter;
   font-size: 11px;

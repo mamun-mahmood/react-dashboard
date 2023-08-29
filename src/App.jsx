@@ -1,6 +1,7 @@
 import "./App.css";
 import Navbar from "./components/navbar/Navbar";
 import Sidebar from "./components/sidebar/Sidebar";
+import Dashboard from "./pages/Dashboard";
 function App() {
   return (
     <div
@@ -18,6 +19,7 @@ function App() {
         {/* navbar */}
         <Navbar />
         {/* screens */}
+        <Dashboard />
       </div>
     </div>
   );
