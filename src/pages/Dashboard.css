@@ -48,8 +48,8 @@
   backdrop-filter: blur(20px);
   height: 301px;
 }
-.estimated-balance-card {
-  padding: 23px;
+.card {
+  padding: 22px;
 }
 .estimated-balance-card .card-header {
   display: flex;
@@ -58,32 +58,62 @@
   font-size: 16px;
 }
 .estimated-balance-card .card-body {
-  margin-top: 22px;
+  margin-top: 35px;
 }
 .estimated-balance-card .card-body .balance {
   font-size: 30px;
 }
-.estimated-balance-card .card-body .profit {
+.card-body .profit {
   display: flex;
   margin-top: 16px;
   justify-content: space-between;
   align-items: center;
   font-size: 13px;
 }
-.estimated-balance-card .card-body .profit .profit-text {
+.card-body .profit .profit-text {
   color: #626d7d;
 }
-.estimated-balance-card .card-body .profit .profit-value {
+.card-body .profit .profit-value {
   color: #219653;
   font-weight: 600;
   line-height: 22.452px;
 }
-.estimated-balance-card .card-body .profit .growth {
+.card-body .profit .growth {
   display: flex;
-  padding: 0px 8px;
   align-items: center;
-  gap: 10px;
+
   color: #219653;
   border-radius: 60px;
   background: rgba(33, 150, 83, 0.2);
+}
+.coin-card .card-header {
+  display: flex;
+  align-items: center;
+}
+.card-header .name-symbol {
+  margin-left: 12px;
+}
+.name-symbol h3 {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28.275px;
+}
+.name-symbol p {
+  color: var(--cool-gray-09, #626d7d);
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22.216px;
+}
+.coin-card .card-body {
+  margin-top: 25px;
+}
+.coin-card .card-body h3 {
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22.452px;
 }
