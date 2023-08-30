@@ -19,7 +19,6 @@ const LineChart = ({ graphData, backgroundColor }) => {
         enabled: false,
       },
       toolbar: {
-        autoSelected: "pan",
         show: false,
       },
     },
