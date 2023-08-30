@@ -12,10 +12,13 @@
   font-weight: 600;
   line-height: 28px;
 }
+.header-container .btn-container {
+  display: flex;
+  gap: 10.205px;
+}
 .markets-container .header-container button {
   border-radius: 7.398px;
   padding: 2px 12px;
-  width: 79.718px;
   height: 28px;
   outline: none;
   border: none;
@@ -47,6 +50,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: 28.275px; /* 235.621% */
+  flex: 1;
 }
 .markets-coin p {
   color: var(--gray-09, #5e6e78);
@@ -55,6 +59,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: 22.452px; /* 187.1% */
+  flex: 1;
 }
 .markets-coin .growth {
   display: flex;
@@ -63,6 +68,7 @@
   border-radius: 60px;
   background: rgba(33, 150, 83, 0.2);
   padding: 4px 8px;
+  flex: 0;
 }
 .markets-container .body button {
   display: flex;

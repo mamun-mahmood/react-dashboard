@@ -67,21 +67,23 @@ const Markets = () => {
     <div className="markets-container">
       <div className="header-container">
         <h3>Markets</h3>
-        {buttons.map((e) => (
-          <button
-            onClick={() => setActive(e.label)}
-            className={`${active === e.label && "active"}`}
-          >
-            {e.label}
-          </button>
-        ))}
+        <div className="btn-container">
+          {buttons.map((e) => (
+            <button
+              onClick={() => setActive(e.label)}
+              className={`${active === e.label && "active"}`}
+            >
+              {e.label}
+            </button>
+          ))}
+        </div>
       </div>
       <div className="body">
         {coins.map(({ growth, name, symbol, total }) => (
           <div className="markets-coin">
             <h3>{symbol}</h3>
             <p>{name}</p>
-            <h3>{total}</h3>
+            <h3>${total}</h3>
             <p
               className="growth"
               style={{

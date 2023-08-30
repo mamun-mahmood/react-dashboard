@@ -1,3 +1,7 @@
+.card {
+  padding: 22px;
+}
+
 .estimated-balance-card .card-header {
   display: flex;
   justify-content: space-between;
