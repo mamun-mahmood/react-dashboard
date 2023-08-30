@@ -81,7 +81,6 @@
 .card-body .profit .growth {
   display: flex;
   align-items: center;
-
   color: #219653;
   border-radius: 60px;
   background: rgba(33, 150, 83, 0.2);
@@ -97,7 +96,6 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  line-height: 28.275px;
 }
 .name-symbol p {
   color: var(--cool-gray-09, #626d7d);
@@ -105,10 +103,10 @@
   font-size: 13px;
   font-style: normal;
   font-weight: 500;
-  line-height: 22.216px;
 }
 .coin-card .card-body {
-  margin-top: 25px;
+  /* margin-top: 25px; */
+  /* display: flex; */
 }
 .coin-card .card-body h3 {
   font-family: Inter;
@@ -116,4 +114,5 @@
   font-style: normal;
   font-weight: 600;
   line-height: 22.452px;
+  margin-top: 25px;
 }
