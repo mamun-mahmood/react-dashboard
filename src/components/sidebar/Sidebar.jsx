@@ -58,21 +58,24 @@ const Sidebar = ({ sidebarOpen }) => {
             Blue<span style={{ color: "var(--text-color)" }}>Trade.</span>
           </span>
         </div>
-        <div className="sidebar-profile-button">
-          <div className="avatar-name-conatainer">
-            <img
-              className="avatar"
-              src="/images/avatar.png"
-              alt="user-avatar"
-            />
-            <div className="name-email-container">
-              <p className="navbar-profile-button-name">Andy Warhol</p>
-              <p className="navbar-profile-button-email">andywarhol@mail.com</p>
+        <div className="sidebar-profile-button-container">
+          <div className="sidebar-profile-button">
+            <div className="avatar-name-conatainer">
+              <img
+                className="avatar"
+                src="/images/avatar.png"
+                alt="user-avatar"
+              />
+              <div className="name-email-container">
+                <p className="navbar-profile-button-name">Andy Warhol</p>
+                <p className="navbar-profile-button-email">
+                  andywarhol@mail.com
+                </p>
+              </div>
             </div>
+            <div className="navbar-profile-button-icon">{svg.morevert}</div>
           </div>
-          <div className="navbar-profile-button-icon">{svg.morevert}</div>
         </div>
-
         {sidebarMenus.map((menu, index) => (
           <div key={index}>
             <button

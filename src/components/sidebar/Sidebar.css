@@ -63,6 +63,12 @@
     transform: translateX(0);
     background: var(--bg-color);
   }
+  .sidebar-profile-button-container {
+    display: block !important;
+  }
+}
+.sidebar-profile-button-container {
+  display: none;
 }
 .sidebar-profile-button {
   color: var(--text-color);

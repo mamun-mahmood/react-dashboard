@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { svg } from "../../assets/svg";
 import "./Navbar.css";
 import ToggleSwitch from "./ToggleSwitch";
