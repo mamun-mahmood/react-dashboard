@@ -82,6 +82,48 @@ const CoinChart = () => {
           x: new Date().toLocaleDateString(),
           y: [52.76, 57.35, 52.15, 57.03],
         },
+
+        {
+          x: new Date().toLocaleDateString(),
+          y: [53.66, 54.99, 51.35, 52.95],
+        },
+        {
+          x: new Date().toLocaleDateString(),
+          y: [52.76, 57.35, 52.15, 57.03],
+        },
+        {
+          x: new Date().toLocaleDateString(),
+          y: [51.98, 56.29, 51.59, 53.85],
+        },
+        {
+          x: new Date().toLocaleDateString(),
+          y: [53.66, 54.99, 51.35, 52.95],
+        },
+        {
+          x: new Date().toLocaleDateString(),
+          y: [52.76, 57.35, 52.15, 57.03],
+        },
+
+        {
+          x: new Date().toLocaleDateString(),
+          y: [53.66, 54.99, 51.35, 52.95],
+        },
+        {
+          x: new Date().toLocaleDateString(),
+          y: [52.76, 57.35, 52.15, 57.03],
+        },
+        {
+          x: new Date().toLocaleDateString(),
+          y: [51.98, 56.29, 51.59, 53.85],
+        },
+        {
+          x: new Date().toLocaleDateString(),
+          y: [53.66, 54.99, 51.35, 52.95],
+        },
+        {
+          x: new Date().toLocaleDateString(),
+          y: [52.76, 57.35, 52.15, 57.03],
+        },
       ],
       image: "/images/btc.png",
       backgroundColor: "#F0C98C",

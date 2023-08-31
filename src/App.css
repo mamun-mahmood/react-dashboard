@@ -6,6 +6,7 @@
   --chart-buttons-bg-color: #dde1e438;
   --chart-buttons-active-bg-color: hsl(212, 100%, 97%);
   --small-card-bg-color: rgba(249, 249, 250, 0.56);
+  --menu-active-bg-color: #d5e6fb;
 }
 
 /* Dark mode */
@@ -16,6 +17,7 @@
   --chart-buttons-bg-color: #262c3038;
   --chart-buttons-active-bg-color: #131313;
   --small-card-bg-color: rgba(18, 18, 18, 0.56);
+  --menu-active-bg-color: #062141;
 }
 * {
   margin: 0;

@@ -55,19 +55,20 @@
   background: transparent;
 }
 .navbar-profile-button {
-  color: #5e6e78;
+  color: var(--text-color);
   font-style: normal;
   font-weight: 500;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #f2f8ff;
+  background: var(--small-card-bg-color);
   border-radius: 12.6px;
   padding: 7px 16px;
 }
 .navbar-profile-button-name {
   background: transparent;
-  color: #1f1f1f;
+  color: var(--text-color);
+
   font-family: Inter;
   font-size: 13.468px;
   font-style: normal;

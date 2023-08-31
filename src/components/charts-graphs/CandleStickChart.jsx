@@ -7,12 +7,7 @@ const CandleStickChart = ({ coin }) => {
     },
   ];
 
-  const labels = [];
-  // graphData.map((e) => {
-  //   labels.push(e.total);
-  // });
   const options = {
-    // labels: labels
     chart: {
       type: "candlestick",
       height: 350,
@@ -29,6 +24,10 @@ const CandleStickChart = ({ coin }) => {
       toolTip: {
         show: false,
       },
+      labels: {
+        rotate: 0,
+      },
+      tickAmount: 5,
     },
     yaxis: {
       type: "numeric",
@@ -38,7 +37,7 @@ const CandleStickChart = ({ coin }) => {
     },
     grid: {
       show: false,
-      padding: { left: 0, right: 0, top: -0, bottom: 0 },
+      padding: { left: 10, right: -30, top: -0, bottom: 0 },
     },
     stroke: {
       curve: "smooth",
@@ -60,6 +59,7 @@ const CandleStickChart = ({ coin }) => {
         fontFamily: undefined,
         padding: "20px",
       },
+      theme: "dark",
     },
   };
 

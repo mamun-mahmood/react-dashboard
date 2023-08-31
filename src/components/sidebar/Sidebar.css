@@ -43,11 +43,8 @@
   color: var(--text-color);
 }
 .menu-sidebar-option:hover {
-  background: #d5e6fb;
-}
-.menu-sidebar-option:focus {
-  background: #d5e6fb;
+  background: var(--menu-active-bg-color);
 }
 .sidebar-option-icon {
-  margin-right: 7px;
+  margin-right: 8px;
 }

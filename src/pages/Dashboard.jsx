@@ -168,7 +168,12 @@ const Dashboard = () => {
           <Balances coins={coins} />
         </div>
         <div className="second-row">
-          <div className="column">
+          <div
+            className="column"
+            style={{
+              width: "90%",
+            }}
+          >
             <CoinChart />
           </div>
           <div className="column">

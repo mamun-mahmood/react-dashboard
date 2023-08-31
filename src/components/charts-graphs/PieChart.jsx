@@ -9,12 +9,17 @@ const PieChart = ({ coins }) => {
   coins.map((e) => {
     labels.push(e.symbol);
   });
-
+  const colors = [];
+  coins.map((e) => {
+    colors.push(e.backgroundColor);
+  });
   const options = {
     labels: labels,
     chart: {
       type: "donut",
     },
+    colors: colors,
+
     responsive: [
       {
         options: {
@@ -35,15 +40,11 @@ const PieChart = ({ coins }) => {
       pie: {
         expandOnClick: true,
       },
-      donut: {
-        colors: ["#546E7A", "#E91E63", "#000"],
-      },
     },
     tooltip: {
       enabled: true,
       style: {
         fontSize: "16px",
-        fontFamily: undefined,
         padding: "20px",
       },
     },
@@ -55,7 +56,7 @@ const PieChart = ({ coins }) => {
         series={series}
         labels={labels}
         type="donut"
-        width={"90%"}
+        width={"100%"}
       />
     </div>
   );

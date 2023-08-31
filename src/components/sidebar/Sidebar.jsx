@@ -59,6 +59,11 @@ const Sidebar = () => {
             <button
               className="menu-sidebar-option"
               onClick={() => setActive(menu.link)}
+              style={{
+                background: `${
+                  active === menu.link ? "var( --menu-active-bg-color)" : ""
+                }`,
+              }}
             >
               <span className="sidebar-option-icon">{menu.icon}</span>
               {menu.name}

@@ -24,8 +24,6 @@ const Balances = ({ coins }) => {
               height: "43px",
               justifyContent: "center",
               alignItems: "center",
-              flexShrink: "0",
-              opacity: 0.5,
             }}
           >
             <img src="/images/wallet.png" alt="wallet-icon" />
@@ -63,7 +61,6 @@ const Balances = ({ coins }) => {
               <div
                 style={{
                   backgroundColor: `${backgroundColor}`,
-                  padding: "8px",
                   borderRadius: 10,
                   display: "flex",
                   width: "44px",
@@ -73,7 +70,19 @@ const Balances = ({ coins }) => {
                   flexShrink: "0",
                 }}
               >
-                <img src={image} alt="wallet-icon" />
+                <div
+                  style={{
+                    borderRadius: 10,
+                    background: "rgba(0, 0, 0, 0.3)",
+                    width: "100%",
+                    height: "100%",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                >
+                  <img src={image} alt="wallet-icon" />
+                </div>
               </div>
               <div className="name-symbol">
                 <h3>{symbol}</h3>

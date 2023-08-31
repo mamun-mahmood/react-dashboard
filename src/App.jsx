@@ -24,6 +24,8 @@ function App() {
       <div
         style={{
           flex: 1,
+          height: "100vh",
+          overflowY: "scroll",
         }}
       >
         {/* navbar */}

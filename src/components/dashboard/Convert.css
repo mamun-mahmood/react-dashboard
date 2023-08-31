@@ -70,7 +70,7 @@ option {
   background: #3380ff;
   border: none;
   outline: none;
-  color: var(--text-color);
+  color: #fff;
   text-align: center;
   font-family: Inter;
   font-size: 14px;

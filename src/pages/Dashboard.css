@@ -26,10 +26,11 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 25px;
+  gap: 20px;
 }
 
 .second-row .column {
-  flex-basis: 48%;
+  flex-basis: auto;
   /* padding: 10px; */
   border-radius: 15px;
   backdrop-filter: blur(20px);
