@@ -62,10 +62,9 @@ const History = () => {
               className="status"
               style={{
                 backgroundColor: `${
-                  staus === "Pending"
-                    ? "rgba(235, 87, 87, 0.20)"
-                    : "rgba(33, 150, 83, 0.20)"
+                  staus === "Pending" ? "#F2C94C33" : "rgba(33, 150, 83, 0.20)"
                 }`,
+                color: `${staus === "Pending" ? "#F2994A" : "#219653"}`,
               }}
             >
               {staus}
