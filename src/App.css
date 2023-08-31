@@ -1,5 +1,30 @@
+:root {
+  --transition-duration: 0.2s;
+  --bg-color: #ffffff;
+  --text-color: #000;
+  --dashboard-bg-color: #d5e6fb;
+  --chart-buttons-bg-color: #dde1e438;
+  --chart-buttons-active-bg-color: hsl(212, 100%, 97%);
+  --small-card-bg-color: #626d7d;
+}
+
+/* Dark mode */
+.dark-mode {
+  --bg-color: #1c1c25;
+  --text-color: #fff;
+  --dashboard-bg-color: #1212128f;
+  --chart-buttons-bg-color: #262c3038;
+  --chart-buttons-active-bg-color: #131313;
+  --small-card-bg-color: #1212128f;
+}
 * {
   margin: 0;
-  background: #fff;
   box-sizing: border-box;
+}
+body {
+  transition: background-color var(--transition-duration) ease,
+    color var(--transition-duration) ease;
+
+  color: var(--text-color);
+  background: var(--bg-color);
 }

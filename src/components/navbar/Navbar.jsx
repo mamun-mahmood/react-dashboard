@@ -1,6 +1,10 @@
 import { svg } from "../../assets/svg";
 import "./Navbar.css";
-const Navbar = () => {
+import ToggleSwitch from "./ToggleSwitch";
+const Navbar = ({ setDarkMode }) => {
+  const toggleDarkMode = () => {
+    setDarkMode((prevDarkMode) => !prevDarkMode);
+  };
   return (
     <div className="navbar-container">
       <div className="navbar">
@@ -11,6 +15,13 @@ const Navbar = () => {
         </div>
         {/* nav right  */}
         <div className="navbar-right">
+          <div
+            style={{
+              marginRight: "10px",
+            }}
+          >
+            <ToggleSwitch toggleDarkMode={toggleDarkMode} />
+          </div>
           <div className="navbar-right-item">{svg.notification}</div>
           <div className="navbar-profile-button">
             <div className="avatar-name-conatainer">

@@ -1,12 +1,11 @@
 /* Page container */
 .dashboard-container {
   padding: 28px 33px;
-  background: #d5e6fb;
+  background: var(--dashboard-bg-color);
 }
 
 /* First row with four columns */
 .first-row {
-  background: transparent;
   display: flex;
   justify-content: space-between;
   margin-bottom: 27px;
@@ -18,7 +17,9 @@
   border-radius: 12px;
   backdrop-filter: blur(20px);
 }
-
+.column {
+  background: var(--bg-color);
+}
 /* Second row with two columns */
 .second-row {
   background: transparent;
@@ -77,6 +78,13 @@
   justify-content: space-between;
   align-items: center;
 }
+.coin-chart-container .balance-container {
+  background: var(--small-card-bg-color);
+  display: flex;
+  padding: 3px 20px;
+  justify-content: space-between;
+  flex: 0.8;
+}
 .coin-chart-container .header-container .balance {
   display: flex;
   align-items: center;
@@ -100,7 +108,8 @@
   height: 28px;
   outline: none;
   border: none;
-  background: #f8f8f9;
+  background: var(--chart-buttons-bg-color);
+  color: var(--text-color);
   cursor: pointer;
   font-size: 10.569px;
   text-align: center;

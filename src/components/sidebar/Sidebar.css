@@ -12,6 +12,20 @@
   font-family: Inter;
   height: auto;
 }
+.company-name {
+  display: flex;
+  width: 126px;
+  height: 32px;
+  justify-content: center;
+  align-items: center;
+  color: #2f80ed;
+  text-align: center;
+  font-family: Inter;
+  font-size: 22.144px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 27.073px; /* 122.259% */
+}
 .menu-sidebar-option {
   width: 208px;
   border-radius: 8.834px;
@@ -25,6 +39,8 @@
   align-items: center;
   justify-content: start;
   padding-left: 29px;
+  background: transparent;
+  color: var(--text-color);
 }
 .menu-sidebar-option:hover {
   background: #d5e6fb;

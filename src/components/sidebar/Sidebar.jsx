@@ -49,7 +49,10 @@ const Sidebar = () => {
             alignItems: "center",
           }}
         >
-          {svg.logo} {svg.bludeTrade}
+          {svg.logo}{" "}
+          <span className="company-name">
+            Blue<span style={{ color: "var(--text-color)" }}>Trade.</span>
+          </span>
         </div>
         {sidebarMenus.map((menu, index) => (
           <div key={index}>
