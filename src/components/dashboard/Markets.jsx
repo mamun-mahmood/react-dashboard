@@ -64,8 +64,8 @@ const Markets = () => {
     },
   ];
   return (
-    <div className="markets-container">
-      <div className="header-container">
+    <div className="markets-container ">
+      <div className="header-container ">
         <h3>Markets</h3>
         <div className="btn-container">
           {buttons.map((e) => (
@@ -79,7 +79,7 @@ const Markets = () => {
           ))}
         </div>
       </div>
-      <div className="body">
+      <div className="body scrollbar-modified">
         {coins.map(({ growth, name, symbol, total }) => (
           <div key={symbol} className="markets-coin">
             <h3>{symbol}</h3>
@@ -101,8 +101,8 @@ const Markets = () => {
             </p>
           </div>
         ))}
-        <button>View All</button>
       </div>
+      <button>View All</button>
     </div>
   );
 };

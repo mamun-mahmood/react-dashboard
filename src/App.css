@@ -28,3 +28,11 @@ body {
   color: var(--text-color);
   background: var(--bg-color);
 }
+.scrollbar-modified::-webkit-scrollbar {
+  width: 5px;
+  background-color: #f8f8f9;
+}
+.scrollbar-modified::-webkit-scrollbar-thumb {
+  background-color: #0060ff1a; /* Thumb color */
+  border-radius: 6px;
+}

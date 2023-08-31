@@ -30,7 +30,7 @@
 
 .second-row .column {
   flex-basis: 48%;
-  padding: 10px;
+  /* padding: 10px; */
   border-radius: 15px;
   backdrop-filter: blur(20px);
   height: 428px;

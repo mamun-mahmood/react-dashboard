@@ -1,5 +1,6 @@
-/* .markets-container {
-} */
+.markets-container {
+  height: 100%;
+}
 .markets-container .header-container {
   display: flex;
   align-items: center;
@@ -37,6 +38,9 @@
 }
 .markets-container .body {
   margin-top: 29px;
+  max-height: 75%;
+  overflow-y: scroll;
+  padding-right: 5px;
 }
 .markets-coin {
   display: flex;
@@ -72,7 +76,7 @@
   padding: 4px 8px;
   flex: 0;
 }
-.markets-container .body button {
+.markets-container button {
   display: flex;
   padding: 4px 10px;
   border-radius: 7px;
