@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1%;
+  margin-bottom: 10px;
 }
 .convert-container .header h3 {
   font-size: 20px;
@@ -73,7 +73,7 @@
   opacity: 0.8;
 }
 .inputs-container p {
-  color: #d5e6fb;
+  color: #626d7d;
   font-family: Inter;
   font-size: 8px;
   font-style: normal;

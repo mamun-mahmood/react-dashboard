@@ -4,6 +4,7 @@ import Balances from "../components/dashboard/Balances";
 import CoinChart from "../components/dashboard/CoinChart";
 import Assets from "../components/dashboard/Assets";
 import Convert from "../components/dashboard/Convert";
+import History from "../components/dashboard/History";
 const Dashboard = () => {
   const coins = [
     {
@@ -181,7 +182,9 @@ const Dashboard = () => {
           <div className="column">
             <Convert coins={coins} />
           </div>
-          <div className="column"></div>
+          <div className="column">
+            <History coins={coins} />
+          </div>
         </div>
       </div>
     </>
