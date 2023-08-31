@@ -19,7 +19,6 @@
 }
 .convert-container .inputs-container .input {
   display: flex;
-  width: 100%;
   padding: 15px 17px;
   background: var(--small-card-bg-color);
   justify-content: space-between;
@@ -37,12 +36,12 @@
   border: none;
   border-radius: 7px;
   margin-right: 12px;
-  flex: 1;
+  width: 95%;
   outline: none;
 }
 .coin-select {
   padding: 10px 0px;
-  width: 100%;
+  /* width: 100%; */
   border-radius: 7px;
   border: none;
   outline: none;

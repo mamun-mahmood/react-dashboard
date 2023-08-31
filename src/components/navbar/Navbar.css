@@ -1,6 +1,3 @@
-.navbar-container {
-  height: 98px;
-}
 .navbar {
   padding: 21px 39px;
   display: flex;
@@ -68,7 +65,6 @@
 .navbar-profile-button-name {
   background: transparent;
   color: var(--text-color);
-
   font-family: Inter;
   font-size: 13.468px;
   font-style: normal;
@@ -83,4 +79,41 @@
   font-style: normal;
   font-weight: 500;
   line-height: 28.458px; /* 258.71% */
+}
+@media only screen and (max-width: 1460px) {
+  .search-input {
+    width: 350px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .navbar-profile-button .name-email-container {
+    display: none;
+  }
+  .navbar-profile-button .navbar-profile-button {
+    width: 100px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .search-input {
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar-profile-button {
+    display: none;
+  }
+  .navbar {
+    padding: 15px;
+  }
+  .sidebar-toggler {
+    display: block !important;
+  }
+}
+.sidebar-toggler {
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+  display: none;
 }

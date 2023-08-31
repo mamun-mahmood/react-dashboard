@@ -169,25 +169,45 @@ const Dashboard = () => {
         </div>
         <div className="second-row">
           <div
-            className="column"
+            className="column column1"
             style={{
-              width: "90%",
+              width: "58%",
             }}
           >
             <CoinChart />
           </div>
-          <div className="column">
+          <div
+            className="column column2"
+            style={{
+              width: "40%",
+            }}
+          >
             <Markets />
           </div>
         </div>
         <div className="third-row">
-          <div className="column">
+          <div
+            className="column"
+            style={{
+              width: "32%",
+            }}
+          >
             <Assets coins={coins} />
           </div>
-          <div className="column">
+          <div
+            className="column"
+            style={{
+              width: "32%",
+            }}
+          >
             <Convert coins={coins} />
           </div>
-          <div className="column">
+          <div
+            className="column"
+            style={{
+              width: "32%",
+            }}
+          >
             <History coins={coins} />
           </div>
         </div>

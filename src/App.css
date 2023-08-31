@@ -22,6 +22,7 @@
 * {
   margin: 0;
   box-sizing: border-box;
+  background: transparent;
 }
 body {
   transition: background-color var(--transition-duration) ease,

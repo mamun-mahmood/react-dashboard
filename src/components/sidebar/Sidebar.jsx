@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { svg } from "../../assets/svg";
 import "./Sidebar.css";
-const Sidebar = () => {
+const Sidebar = ({ sidebarOpen }) => {
   const [active, setActive] = useState("/dashboard");
   const sidebarMenus = [
     {
@@ -40,8 +40,12 @@ const Sidebar = () => {
       link: "/logout",
     },
   ];
+
   return (
-    <div className="sidebar-container">
+    <div
+      className={`sidebar-container ${sidebarOpen ? "active" : ""}`}
+      id="sidebar-container"
+    >
       <div className="sidebar">
         <div
           style={{
@@ -54,6 +58,21 @@ const Sidebar = () => {
             Blue<span style={{ color: "var(--text-color)" }}>Trade.</span>
           </span>
         </div>
+        <div className="sidebar-profile-button">
+          <div className="avatar-name-conatainer">
+            <img
+              className="avatar"
+              src="/images/avatar.png"
+              alt="user-avatar"
+            />
+            <div className="name-email-container">
+              <p className="navbar-profile-button-name">Andy Warhol</p>
+              <p className="navbar-profile-button-email">andywarhol@mail.com</p>
+            </div>
+          </div>
+          <div className="navbar-profile-button-icon">{svg.morevert}</div>
+        </div>
+
         {sidebarMenus.map((menu, index) => (
           <div key={index}>
             <button

@@ -13,6 +13,11 @@ function App() {
       document.body.classList.remove("dark-mode");
     }
   }, [darkMode]);
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setSidebarOpen((prev) => !prev);
+  };
   return (
     <div
       style={{
@@ -20,7 +25,7 @@ function App() {
       }}
     >
       {/* sidebar */}
-      <Sidebar />
+      <Sidebar sidebarOpen={sidebarOpen} />
       <div
         style={{
           flex: 1,
@@ -29,7 +34,7 @@ function App() {
         }}
       >
         {/* navbar */}
-        <Navbar setDarkMode={setDarkMode} />
+        <Navbar setDarkMode={setDarkMode} toggleSidebar={toggleSidebar} />
         {/* screens */}
         <Dashboard />
       </div>
