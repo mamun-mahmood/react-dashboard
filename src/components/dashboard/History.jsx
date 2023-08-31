@@ -1,3 +1,4 @@
+import "./History.css";
 const History = () => {
   return (
     // css are in Dashboard.css

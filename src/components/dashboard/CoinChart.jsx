@@ -89,7 +89,7 @@ const CoinChart = () => {
   ];
 
   const [active, setActive] = useState("1H");
-  const chartButtons = ["1H", "3H", "5H", "1D", "1D", "1W", "1M"];
+  const chartButtons = ["1H", "3H", "5H", "1D", "1W", "1M"];
   return (
     // css are in Dashboard.css
     <div className="coin-chart-container">
@@ -110,6 +110,7 @@ const CoinChart = () => {
         <div className="chart-buttons">
           {chartButtons.map((e) => (
             <button
+              key={e}
               onClick={() => setActive(e)}
               className={`${active === e && "active"}`}
             >

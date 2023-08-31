@@ -1,0 +1,82 @@
+.convert-container .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1%;
+}
+.convert-container .header h3 {
+  font-size: 20px;
+}
+.convert-container .header p {
+  width: 34px;
+  height: 26px;
+  cursor: pointer;
+}
+.convert-container .inputs-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.convert-container .inputs-container .input {
+  display: flex;
+  width: 100%;
+  padding: 15px 17px;
+  background: var(--cool-gray-01, #f9f9fa);
+  justify-content: space-between;
+  border-radius: 7px;
+}
+.convert-container .inputs-container input {
+  /* width: 100%; */
+  color: var(--cool-gray-09, #626d7d);
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22.452px; /* 187.1% */
+  display: flex;
+  border: none;
+  border-radius: 7px;
+  margin-right: 12px;
+  flex: 1;
+}
+.coin-select {
+  padding: 10px 8px;
+  width: 100%;
+  border-radius: 7px;
+  border: none;
+  outline: none;
+}
+.coin-select .option {
+  padding: 17px;
+}
+.convert-now {
+  display: flex;
+  height: 47px;
+  padding: 0px 11px 0px 4px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 7px;
+  background: #3380ff;
+  border: none;
+  outline: none;
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  cursor: pointer;
+}
+.convert-now:hover {
+  opacity: 0.8;
+}
+.inputs-container p {
+  color: #d5e6fb;
+  font-family: Inter;
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 11.5px; /* 143.75% */
+}

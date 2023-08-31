@@ -70,6 +70,7 @@ const Markets = () => {
         <div className="btn-container">
           {buttons.map((e) => (
             <button
+              key={e.label}
               onClick={() => setActive(e.label)}
               className={`${active === e.label && "active"}`}
             >
@@ -80,7 +81,7 @@ const Markets = () => {
       </div>
       <div className="body">
         {coins.map(({ growth, name, symbol, total }) => (
-          <div className="markets-coin">
+          <div key={symbol} className="markets-coin">
             <h3>{symbol}</h3>
             <p>{name}</p>
             <h3>${total}</h3>
