@@ -81,9 +81,10 @@
 .coin-chart-container .balance-container {
   background: var(--small-card-bg-color);
   display: flex;
-  padding: 3px 20px;
   justify-content: space-between;
-  flex: 0.8;
+  width: 48%;
+  padding: 5px 20px;
+  border-radius: 12px;
 }
 .coin-chart-container .header-container .balance {
   display: flex;
@@ -95,6 +96,7 @@
   border-radius: 60px;
   background: rgba(33, 150, 83, 0.2);
   padding: 0px 8.164px;
+  width: 68.377px;
 }
 .chart-buttons {
   display: flex;

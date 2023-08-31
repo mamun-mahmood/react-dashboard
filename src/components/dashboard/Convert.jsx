@@ -32,7 +32,7 @@ const Convert = ({ coins }) => {
       </div>
       <div className="inputs-container">
         <div className="input">
-          <input type="number" />
+          <input type="number" placeholder="0000" />
           <div className="coin-select-container">
             <select
               name="coinSelect"
@@ -53,7 +53,7 @@ const Convert = ({ coins }) => {
           </div>
         </div>
         <div className="input">
-          <input type="number" />
+          <input type="number" placeholder="0000" />
           <div className="coin-select-container">
             <select
               name="coinSelect"

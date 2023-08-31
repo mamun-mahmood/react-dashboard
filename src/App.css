@@ -5,7 +5,7 @@
   --dashboard-bg-color: #d5e6fb;
   --chart-buttons-bg-color: #dde1e438;
   --chart-buttons-active-bg-color: hsl(212, 100%, 97%);
-  --small-card-bg-color: #626d7d;
+  --small-card-bg-color: rgba(249, 249, 250, 0.56);
 }
 
 /* Dark mode */
@@ -15,7 +15,7 @@
   --dashboard-bg-color: #1212128f;
   --chart-buttons-bg-color: #262c3038;
   --chart-buttons-active-bg-color: #131313;
-  --small-card-bg-color: #1212128f;
+  --small-card-bg-color: rgba(18, 18, 18, 0.56);
 }
 * {
   margin: 0;
@@ -30,7 +30,7 @@ body {
 }
 .scrollbar-modified::-webkit-scrollbar {
   width: 5px;
-  background-color: #f8f8f9;
+  background-color: var(--dashboard-bg-color);
 }
 .scrollbar-modified::-webkit-scrollbar-thumb {
   background-color: #0060ff1a; /* Thumb color */

@@ -94,18 +94,20 @@ const CoinChart = () => {
     // css are in Dashboard.css
     <div className="coin-chart-container">
       <div className="header-container">
-        <div className="coin">
-          <h3 className="symbol">{coins[0].symbol}</h3>
-          <p className="name">{coins[0].name}</p>
-        </div>
-        <div className="balance">
-          <div>
-            <h3>${coins[0].total}</h3>
-            <p className="growth">
-              {coins[0].growth < 1 ? "-" : "+"}${coins[0].growth}
-            </p>
+        <div className="balance-container">
+          <div className="coin">
+            <h3 className="symbol">{coins[0].symbol}</h3>
+            <p className="name">{coins[0].name}</p>
           </div>
-          <img src="/images/down-arrow.png" alt="down-arrow" />
+          <div className="balance">
+            <div>
+              <h3>${coins[0].total}</h3>
+              <p className="growth">
+                {coins[0].growth < 1 ? "-" : "+"}${coins[0].growth}
+              </p>
+            </div>
+            <img src="/images/down-arrow.png" alt="down-arrow" />
+          </div>
         </div>
         <div className="chart-buttons">
           {chartButtons.map((e) => (

@@ -21,13 +21,13 @@
   display: flex;
   width: 100%;
   padding: 15px 17px;
-  background: var(--cool-gray-01, #f9f9fa);
+  background: var(--small-card-bg-color);
   justify-content: space-between;
   border-radius: 7px;
 }
 .convert-container .inputs-container input {
-  /* width: 100%; */
-  color: var(--cool-gray-09, #626d7d);
+  background: transparent;
+  color: var(--text-color);
   font-family: Inter;
   font-size: 12px;
   font-style: normal;
@@ -38,14 +38,24 @@
   border-radius: 7px;
   margin-right: 12px;
   flex: 1;
+  outline: none;
 }
 .coin-select {
-  padding: 10px 8px;
+  padding: 10px 0px;
   width: 100%;
   border-radius: 7px;
   border: none;
   outline: none;
 }
+option {
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 22.452px;
+}
+
 .coin-select .option {
   padding: 17px;
 }
@@ -60,7 +70,7 @@
   background: #3380ff;
   border: none;
   outline: none;
-  color: #fff;
+  color: var(--text-color);
   text-align: center;
   font-family: Inter;
   font-size: 14px;
